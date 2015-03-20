@@ -9,10 +9,10 @@
 #define FREQUENCY_CORRECTION 0
 
 // ADC settings
-#define OPEN_SQUELCH false
-#define ADC_REFERENCE REF_3V3
+#define OPEN_SQUELCH true
+//#define ADC_REFERENCE REF_3V3
 // OR
-//#define ADC_REFERENCE REF_5V
+#define ADC_REFERENCE REF_5V
 
 // Sampling & timer setup
 #define CONFIG_AFSK_DAC_SAMPLERATE 9600
@@ -23,9 +23,9 @@
 //#define SERIAL_PROTOCOL PROTOCOL_SIMPLE_SERIAL
 
 // AX25 settings
-#if SERIAL_PROTOCOL == PROTOCOL_SIMPLE_SERIAL
+//#if SERIAL_PROTOCOL == PROTOCOL_SIMPLE_SERIAL
     #define CUSTOM_FRAME_SIZE 330
-#endif
+//#endif
 
 // Serial settings
 #define BAUD 9600
